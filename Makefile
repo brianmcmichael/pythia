@@ -1,4 +1,5 @@
-all    :; dapp build
+all    :  build;
+build  :; ./build.sh
 clean  :; dapp clean
-test   :; dapp test
+test   :; ./test.sh $(MATCH)
 deploy :; dapp create Pythia
